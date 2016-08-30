@@ -36,6 +36,7 @@ class LewinskyArticle():
 
             self.pageContents[i] = paragraphs
 
+# If this was in a try-except block, it could be as efficient as Option #1 below. Still not as elegant
 def saveFile(str, filename):
     file = open(filename, "w")
     file.write(str)
@@ -46,4 +47,17 @@ if __name__ == "__main__":
 
     article = LewinskyArticle()
     article.parsePages()
-    saveFile(article.prettyfy(), "../tmp/Lewinsky.txt")
+
+    # There different ways of writing to file.
+    #
+    # Option #1 - closes file automatically
+    # Option #2 - calls cloce manually at the end of writing
+    #
+    # Uncomment the one you would like to try
+
+    # Option #1
+    with open("../tmp/Lewinsky.txt", "w") as open_file:
+        open_file.write(article.prettyfy())
+
+    # Option #2
+    #saveFile(article.prettyfy(), "../tmp/Lewinsky.txt")
