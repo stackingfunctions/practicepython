@@ -17,6 +17,10 @@ def getDataFromLine(line):
         # but if I take that into consideration, the result will be so boring (the same 50 for all)
         return line.split("/")[2]
 
+        # Interesting observation from the website:
+        # The reuired data can also be supressed as a slice [3:-26]
+        #return line[3:-26]
+
     # Value is coming from the first file and it contains only the data without any extra
     else:
         return line
