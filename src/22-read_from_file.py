@@ -1,6 +1,6 @@
 _DEBUG = False
-_FILE_1 = "../tmp/22-nameslist.txt"
-_FILE_2 = "../tmp/22-Training_01.txt"
+_FILE_1 = "../tmp/22/nameslist.txt"
+_FILE_2 = "../tmp/22/Training_01.txt"
 
 def _debug(msg):
     if _DEBUG: print("[DEBUG] " + msg)

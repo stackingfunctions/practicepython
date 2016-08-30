@@ -56,8 +56,10 @@ if __name__ == "__main__":
     # Uncomment the one you would like to try
 
     # Option #1
-    with open("../tmp/Lewinsky.txt", "w") as open_file:
+    with open("../tmp/19/Lewinsky.txt", "w") as open_file:
         open_file.write(article.prettyfy())
 
     # Option #2
-    #saveFile(article.prettyfy(), "../tmp/Lewinsky.txt")
+    #saveFile(article.prettyfy(), "../tmp/22/Lewinsky.txt")
+
+    print("File saved as '../tmp/19/Lewinsky.txt'")
